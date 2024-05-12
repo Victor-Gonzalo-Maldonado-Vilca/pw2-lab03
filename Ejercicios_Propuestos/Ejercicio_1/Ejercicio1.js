@@ -1,6 +1,10 @@
 function day(a){
   const numberDay = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
-  return numberDay[a];
+  if(0 <= a && a <= 6){
+    return numberDay[a];
+  } else {
+    return "Día no valido";
+  }
 }
 //Extrayendo dia actual
 let x = new Date().getDay();
