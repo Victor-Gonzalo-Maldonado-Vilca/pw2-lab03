@@ -1,4 +1,7 @@
-//Extrayendo día actual
+function day(a){
+  const numberDay = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+  return numberDay[a];
+}
+//Extrayendo dia actual
 let x = new Date().getDay();
-const numberDay = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
-console.log(numberDay[x]);
+console.log(day(x));
