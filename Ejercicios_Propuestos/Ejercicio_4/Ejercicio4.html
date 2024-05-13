@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="es">
+  <head>
+    <title>Ejercicio 4 </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div>
+      <form id="formulario">
+        <label for="enlace">URL meet:</label>
+        <input type="text" id="enlace" name="enlace"></input>
+        <input type="submit" value="Generar"/>
+      </form>
+    </div>
+    <div>
+      <p id="codig"><p>
+    </div>
+    <script>
+      document.getElementById("formulario").addEventListener('submit', function(evento){   
+        evento.preventDefault();
+        const url = document.getElementById("enlace").value;
+        function obtenerCodigo(enlace){
+          codigo = enlace.substring(24,enlace.length);
+          if (codigo){
+            return codigo.replace(/-/g, '');
+          } else {
+            return "No hay código";
+          }
+        }
+        document.getElementById("codig").textContent = obtenerCodigo(url);
+      });
+    </script>
+  </body>
+</html>
