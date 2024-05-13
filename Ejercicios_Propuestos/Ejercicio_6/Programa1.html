@@ -8,11 +8,25 @@
     <div>
       <center>
         <h1 id="text">HOLA MUNDO!!!</h1>
-        <button id="normal" onclick="tamañoNormal()">Text-N</button>
-        <button id="agrandar" onclick="tamañoAgrandado()">Text-A</button>
-        <button id="black" onclick="colorNormal()">Color-N</button>
-        <button id="red" onclick="colorRojo()">Color-R</button>
+        <button id="normal" class="boton" onclick="tamañoNormal()">Text-N</button>
+        <button id="agrandar" class="boton" onclick="tamañoAgrandado()">Text-A</button>
+        <button id="black" class="boton" onclick="colorNormal()">Color-N</button>
+        <button id="red" class="boton" onclick="colorRojo()">Color-R</button>
       </center>
     </div>
+    <script>
+      function tamañoNormal(){
+        document.getElementById("text").style.fontSize = '32px';
+      }
+      function tamañoAgrandado(){
+        document.getElementById("text").style.fontSize = '45px';
+      }
+      function colorNormal(){
+        document.getElementById("text").style.color = 'black';
+      }
+      function colorRojo(){
+        document.getElementById("text").style.color = 'red';
+      }
+    </script>
   </body>
 </html>
