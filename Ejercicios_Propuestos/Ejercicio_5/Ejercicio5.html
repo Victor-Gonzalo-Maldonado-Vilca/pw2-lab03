@@ -18,8 +18,32 @@
     <div id="resultado">
     </div>
     <script>
+      document.getElementById("formulario").addEventListener('submit', function(evento){   
+        evento.preventDefault();
+        const cantidad = parseInt(document.getElementById("cantidad").value);
+        const tabla = document.getElementById("contenedor");
+        tabla.innerHTML = "<table id='tabla' border='1'><thead><caption>Valores</caption></thead><tbody style='text-align: center'></tbody></table>";
+        const cuerpoTabla = document.getElementById("tabla").getElementsByTagName("tbody")[0];
+        let i = 1;
+        while (i <= cantidad) {
+          let fila = document.createElement("tr");
+          for (let c = 0; c < 50; c++) {
+            let aleatorio = Math.floor(Math.random() * 100) + 1;
+            let cell = document.createElement("td"); 
+            cell.textContent = aleatorio;
+            fila.appendChild(cell); 
+            i++;
+            if (i > cantidad) { 
+              break; 
+            }
+          }
+          cuerpoTabla.appendChild(fila); 
+        }
+
+        tabla.innerHTML += "<br><button onclick='sumarValores()'>Sumar</button>"
+      });
       function sumarValores(){
-        const valores = document.getElementById("").getElementsByTagName("tbody")[0].getElementsByTagName("td");
+        const valores = document.getElementById("tabla").getElementsByTagName("tbody")[0].getElementsByTagName("td");
         let suma = 0;
         for(let i = 0; i < valores.length; i++){
           const valor = parseInt(valores[i].textContent);
