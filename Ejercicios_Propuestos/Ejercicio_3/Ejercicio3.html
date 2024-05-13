@@ -3,6 +3,7 @@
   <head>
     <title>Ejercicio 3</title>
     <meta charset="UTF-8">
+    <meta name="author" content="Victor Gonzalo Maldonado Vilca"/>
   </head>
   <body>
     <div>
@@ -14,5 +15,17 @@
     <div>
       <p id="fecha"><p>
     </div>
+    <script>
+      document.getElementById("formulario").addEventListener('submit', function(evento){   
+        event.preventDefault();
+        const fechaArequipa = new Date('2024-08-15');
+        
+        const fechaActual = new Date();
+        
+        const fechaDiferencia = fechaArequipa - fechaActual;
+        
+        document.getElementById("fecha").textContent = (Math.ceil(fechaDiferencia/(1000*60*60*24)));
+      });
+    </script>
   </body>
 </html>
