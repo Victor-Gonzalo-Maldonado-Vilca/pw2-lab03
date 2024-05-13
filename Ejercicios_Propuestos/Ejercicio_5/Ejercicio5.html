@@ -17,5 +17,17 @@
     </div>
     <div id="resultado">
     </div>
+    <script>
+      function sumarValores(){
+        const valores = document.getElementById("").getElementsByTagName("tbody")[0].getElementsByTagName("td");
+        let suma = 0;
+        for(let i = 0; i < valores.length; i++){
+          const valor = parseInt(valores[i].textContent);
+          suma += valor;
+        }
+        const res = document.getElementById("resultado");
+        res.innerHTML = '<p>' + suma + '</p>'; 
+      }
+    </script>
   </body>
 </html>
