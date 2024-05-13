@@ -37,5 +37,56 @@
     </div>
     <div id="respuesta">
     </div>
+    <script>
+      document.getElementById("formulario").addEventListener('submit', function (evento){
+        evento.preventDefault();
+        const numUno = parseInt(document.getElementById("number1").value);
+        const numDos = parseInt(document.getElementById("number2").value);
+        const operador = document.getElementById("operador").value;
+        const calcular = calculator(numUno,numDos,operador);
+        const resp = document.getElementById("respuesta");
+        resp.innerHTML = "<p>" + calcular + "</p>";
+      });
+      function calculator(a,b,c){
+        switch (c){
+          case "+":
+            return a + b;
+          case "-":
+            return a - b;
+          case '*':
+            return a * b;
+          case '/':
+            return a / b;
+          case '%':
+            return a % b;
+          case '**':
+            return a ** b;
+          case '&&':
+            return a && b;
+          case '||':
+            return a || b;
+          case '^':
+            return a ^ b;
+          case '<':
+            return a < b;
+          case '>':
+            return a > b;
+          case '<=':
+            return a <= b;
+          case '>=':
+            return a >= b;
+          case '&':
+            return a & b;
+          case '|':
+            return a | b;
+          case '<<':
+            return a << b;
+          case '>>':
+            return a >> b;
+          default:
+            return "ERROR";
+        }
+      }
+    </script>
   </body>
 </html>
