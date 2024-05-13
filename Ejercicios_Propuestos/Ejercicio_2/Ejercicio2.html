@@ -19,5 +19,15 @@
     <div>
       <p id="inver"><p>
     </div>
+    <script>
+      document.getElementById("formulario").addEventListener('submit', function(event){
+        event.preventDefault();
+        const cadena = document.getElementById("texto").value;
+        function invert(str){
+          return str.split('').reverse().join('');
+        }
+        document.getElementById("inver").textContent = invert(cadena);
+      });
+    </script>
   </body>
 </html>
