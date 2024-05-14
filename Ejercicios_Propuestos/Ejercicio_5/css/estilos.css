@@ -1,0 +1,28 @@
+body{
+  font-size: 25px;
+  color: red;
+} 
+
+#tabla{
+  margin: auto;
+  color: green;
+}
+
+.boton{
+  border-radius: 10px;
+  background: #a04146;
+  border: 1px solid #60272a;
+  color: white;
+}
+
+.boton:hover{
+  background: #b3666a;
+  border: 1px solid #a04146;
+}
+
+#cantidad{
+  border-radius: 10px;
+  border: 1px solid black;
+  padding-left: 15px;
+  width: 75px;
+}
