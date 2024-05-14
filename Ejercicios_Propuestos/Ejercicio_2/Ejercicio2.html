@@ -4,19 +4,21 @@
     <title>Ejercicio 2</title>
     <meta charset="UTF-8">
     <meta name="author" content="Victor Gonzalo Maldonado Vilca"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
   </head>
   <body>
     <div>
       <center>
         <form id="formulario">
-          <label for="texto">Texto:</label>
-          <input type="text" id="texto" name="texto"/>
+          <label class="label" for="texto"><b>Texto:</b></label>
+          <input class="text" type="text" id="texto" name="texto"/>
           
-          <input type="submit" value="Invertir"/>
+          <input class="invertir" type="submit" value="Invertir"/>
         </form>
       </center>
     </div>
-    <div>
+    <div class="respuesta">
+      <p id="inciso"><b>Texto Invertido:</b></p>
       <p id="inver"><p>
     </div>
     <script>
