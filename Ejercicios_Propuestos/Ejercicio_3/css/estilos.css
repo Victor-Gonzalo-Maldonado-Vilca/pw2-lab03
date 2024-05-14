@@ -2,6 +2,23 @@ body{
   font-size: 25px;
 }
 
-.contenedor{
-  
+.contenedor label{
+  color: green;
+}
+
+.contenedor input{
+  background: #b2494e;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid #7c3336;
+}
+
+.contenedor input:hover{
+  background: #c16d71;
+  border: 1px solid #b2494e;
+}
+
+#fecha {
+  text-align: center;
+  color: blue;
 }
