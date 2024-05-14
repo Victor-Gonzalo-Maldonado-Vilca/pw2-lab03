@@ -1,0 +1,42 @@
+body{
+  font-size: 25px;
+}
+
+.contenedor{
+  width: 470px;
+  align-items: center;
+  margin: auto;
+}
+.boton{
+  border-radius: 10px;
+  background: #a04146;
+  border: 1px solid #60272a;
+  color: white;
+}
+
+.boton:hover{
+  background: #b3666a;
+  border: 1px solis #a04146;
+}
+
+.label{
+  color: red;
+}
+
+#enlace{
+  border-radius: 10px;
+  width: 250px;
+  border: 1px solid black;
+  padding-left: 15px;
+}
+
+#resultado{
+  width: 420px;
+  margin: auto;
+  color: red;
+  text-align: center;
+}
+
+#codig{
+  color: green;
+}

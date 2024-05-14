@@ -4,16 +4,18 @@
     <title>Ejercicio 4 </title>
     <meta charset="UTF-8">
     <meta name="author" content="Victor Gonzalo Maldonado Vilca"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
   </head>
   <body>
-    <div>
+    <div class="contenedor">
       <form id="formulario">
-        <label for="enlace">URL meet:</label>
+        <label class="label" for="enlace"><b>URL meet:</b></label>
         <input type="text" id="enlace" name="enlace"></input>
-        <input type="submit" value="Generar"/>
+        <input type="submit" class="boton" value="Generar"/>
       </form>
     </div>
-    <div>
+    <div id="resultado">
+      <p><b>Código:</b></p>
       <p id="codig"><p>
     </div>
     <script>
