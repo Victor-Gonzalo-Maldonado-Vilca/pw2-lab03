@@ -1,0 +1,38 @@
+#contenedor{
+  width: 310px;
+  margin: auto;
+}
+
+#cuerpo2{
+  color: red;
+  font-size: 25px;
+}
+
+.boton{
+  border-radius: 10px;
+  background: #a04146;
+  border: 1px solid #60272a;
+  color: white;
+}
+
+.boton:hover{
+  background: #b3666a;
+  border: 1px solid #a04146;
+}
+
+.operator{
+  border-radius: 10px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.number{
+  border-radius: 10px;
+  padding-left: 15px;
+  width: 75px;
+  border: 1px solid black;
+}
+
+#parrafo2{
+  text-align: center;
+}

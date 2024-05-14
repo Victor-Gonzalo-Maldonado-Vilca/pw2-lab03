@@ -3,14 +3,16 @@
   <head>
     <title>Ejercicio 6 </title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css"/>
   </head>
-  <body>
-    <div>
+  <body id="cuerpo2">
+    <div id="contenedor">
       <form id="formulario">
         <label for="number1">Número 1:</label>
-        <input type="number" id="number1"/>
+        <input class="number" type="number" id="number1"/>
+        <br>
         <label for="operador">Operador:</label>
-        <select id="operador">
+        <select class="operator" id="operador">
           <option value="+">Suma (+)</option>
           <option value="-">Resta (-)</option>
           <option value="*">Multiplicación (*)</option>
@@ -30,9 +32,10 @@
           <option value="<<">Desplazamiento a la izquierda (<<)</option>
           <option value=">>">Desplazamiento a la derecha (>>)</option>
         </select>
+        <br>
         <label for="number2">Número 2:</label>
-        <input type="number" id="number2"/>
-        <input type="submit" value="Calcular"/>
+        <input class="number" type="number" id="number2"/>
+        <input class="boton" type="submit" value="Calcular"/>
       </form>
     </div>
     <div id="respuesta">
@@ -45,7 +48,7 @@
         const operador = document.getElementById("operador").value;
         const calcular = calculator(numUno,numDos,operador);
         const resp = document.getElementById("respuesta");
-        resp.innerHTML = "<p>" + calcular + "</p>";
+      resp.innerHTML = "<p id='parrafo2' style='color: green;'>La respuesta es: " + calcular + "</p>";
       });
       function calculator(a,b,c){
         switch (c){
